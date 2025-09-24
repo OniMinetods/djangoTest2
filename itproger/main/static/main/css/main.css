@@ -8,6 +8,7 @@ aside {
   flex-direction: column;
   align-items: center;
   float: left;
+  text-align: center;
   width: 20%;
   padding: 2.5%;
   height: 100vh;
@@ -30,6 +31,7 @@ aside h3 {
 
 aside ul {
   list-style: none;
+  padding: 0;
 }
 
 aside a {
@@ -53,7 +55,7 @@ main .features {
   float: left;
   margin-top: 100px;
   text-align: center;
-  width: 80%;
+  width: 75%;
 }
 
 main .features p {
