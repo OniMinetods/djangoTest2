@@ -4,14 +4,72 @@ body {
 }
 
 aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   float: left;
   width: 20%;
   padding: 2.5%;
   height: 100vh;
   border-right: 5px solid #4d4d4d;
+  background-color: #151515;
 }
 
-.flower-image {
-  width: 150px;
-  height: 150px;
+aside img {
+  width: 120px;
+}
+
+aside .logo {
+  font-size: 30px;
+}
+
+aside h3 {
+  margin-top: 50px;
+  font-size: 28px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+aside ul li {
+  color: white;
+  display: block;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+}
+
+aside ul li:hover,
+aside ul a:hover {
+  color: #eb5959;
+  transform: scale(1.1);
+}
+
+main .features {
+  float: left;
+  margin-top: 100px;
+  text-align: center;
+  width: 80%;
+}
+
+main .features p {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.alert-warning {
+  float: left;
+  clear: both;
+  width: 400px;
+  margin: 20px 34%;
+  text-align: left;
+}
+
+.features form {
+  width: 60%;
+  margin: auto;
 }
