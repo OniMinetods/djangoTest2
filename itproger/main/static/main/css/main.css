@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(50, 50, 50);
+  color: white;
+}
+
+aside {
+  float: left;
+  width: 20%;
+  padding: 2.5%;
+  height: 100vh;
+  border-right: 5px solid #4d4d4d;
+}
+
+.flower-image {
+  width: 150px;
+  height: 150px;
+}
