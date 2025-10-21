@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 data = {
     'title': 'Главная страница',
@@ -18,3 +19,13 @@ def image_list(request):
     {'url': request.build_absolute_uri('/static/main/img/twitch_logo.png'), 'alt': 'twitchPidoras'}
   ]
   return JsonResponse(images, safe=False)
+
+@csrf_exempt
+def temperature(request):
+  if request.method == 'POST':
+    room = request.POST.get('room')
+    temp = request.POST.get('temperature')
+    data = [room, temp]
+    return JsonResponse(data, safe=False)
+  else:
+    return JsonResponse({'error': 'Method not allowed'}, status=405)
